@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>  Shopping.it </title>
+</head>
+<body>
+<h1>Calcola i prezzi!</h1>
+
+<form id="form1" name="form1"> 
+
+<p>
+Articolo 1:   
+<input type= "text"     id= "num1"  </p> 
+<br>
+<br>
+
+<p>
+Articolo 2:
+<input type= "text"     id= "num2" /p>
+<br>
+<br>
+
+<p>
+Articolo 3:
+<input type= "text"     id= "num3" /p>
+<br>
+<br>
+
+<p>
+Articolo 4:
+<input type= "text"     id= "num4" /p>
+<br>
+<br>
+
+<p>
+Articolo 5:
+<input type= "text"     id= "num5" /p>
+<br>
+<br>
+
+<input type= "button" value= "somma" onclick= "somma()" />
+
+<p>Prezzo totale: 
+<input name= "disabled" id= "ris" disabled> </p> 
+</form>
+
+<script type = "text/javascript">
+function somma(){
+var n1= parseFloat(document.form1.num1.value);
+var n2= parseFloat(document.form1.num2.value);
+var n3= parseFloat(document.form1.num3.value);
+var n4= parseFloat(document.form1.num4.value);
+var n5= parseFloat(document.form1.num5.value);
+var r=n1+n2+n3+n4+n5;
+document.form1.ris.value=r;
+}
+
+</script>
+</body>
+</html>
